@@ -1,0 +1,34 @@
+[project]
+name = "open-earth"
+version = "0.1.0"
+description = "Local-first Earth exploration and geospatial computing"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1",
+  "python-multipart>=0.0.20",
+  "geopandas>=1.0,<2",
+  "pyarrow>=14",
+  "rasterio>=1.4,<2",
+  "rio-tiler>=7,<9",
+  "mercantile>=1.2,<2",
+  "httpx>=0.28,<1",
+  "numpy>=2,<3",
+  "numexpr>=2.10,<3",
+  "jupyter-client>=8,<9",
+  "ipykernel>=6,<8",
+  "pillow>=11,<13",
+  "xarray>=2025.1",
+  "rioxarray>=0.18",
+  "dask[array,dataframe]>=2025.1",
+  "dask-geopandas>=0.5",
+  "nbformat>=5.10,<6",
+  "planetary-computer>=1.0.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
