@@ -1,0 +1,14 @@
+{
+  "stac": {
+    "name": "Microsoft Planetary Computer",
+    "url": "https://planetarycomputer.microsoft.com/api/stac/v1",
+    "tileApi": "https://planetarycomputer.microsoft.com/api/data/v1",
+    "collections": ["sentinel-2-l2a", "sentinel-1-rtc", "landsat-c2-l2", "naip", "cop-dem-glo-30"]
+  },
+  "basemaps": {
+    "blueMarble": {"bundled": false, "source": "NASA / EOX", "url": "https://tiles.maps.eox.at/wmts/1.0.0/bluemarble_3857/default/g/{z}/{y}/{x}.jpg"},
+    "eox": {"layer": "s2cloudless_3857", "year": 2016, "license": "CC BY 4.0", "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg"},
+    "osm": {"url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png", "policy": "https://operations.osmfoundation.org/policies/tiles/"},
+    "google": {"api": "https://tile.googleapis.com/v1", "keyEnvironmentVariable": "GOOGLE_MAPS_API_KEY", "visualizationOnly": true}
+  }
+}
